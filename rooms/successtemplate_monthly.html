@@ -1,0 +1,67 @@
+<div class="page-container-responsive ">
+  <div class="row row-space-top-4 row-space-8">
+    <div class="col-lg-8 col-md-10 col-center">
+        <div class="alert-background media-photo media-photo-block" style="height:200px;">
+		  <div class="media-cover media-cover-dark" style="background-image: url('<?php echo $img_result[0]; ?>');height:200px;">
+		  </div>
+			  <div class="row row-table row-full-height">
+				<div class="col-sm-10 col-middle col-center text-contrast">
+				  <div class="media">
+					  <i class="icon icon-lima icon-ok-alt alert-icon h3 pull-left hide-sm"></i>
+
+					  <div class="media-body">
+						<p class="h2">Reservation Confirmed</p>
+						Your reservation has been accepted.  An itinerary has been emailed to you.
+					  </div>
+				  </div>
+				</div>
+			  </div>
+</div>
+
+
+      <div class="panel row-space-top-4">
+        <div class="panel-body">
+
+<form action="<?php echo $goto; ?>" method="POST">
+    <p class="h3">
+	<?php echo $msg; ?>
+    </p>
+
+    <p>
+      We'll email the itinerary and the payment invoice after the host accepts your booking.
+    </p>
+
+    <ul class="list-unstyled">
+      <li class="row row-space-2">
+        <div class="col-sm-3 col-md-2 text-right">
+          <i class="icon icon-user"></i> You
+        </div>
+
+        <div class="col-sm-4">
+          <div style="display:none">Your name</div>
+          <?php echo $guest['name']; ?>
+        </div>
+        <div class="col-sm-5">
+          <?php echo $guest['email']; ?>
+        </div>
+      </li>
+    </ul>
+      <div class="row-space-top-3">
+        <label class="checkbox" for="sms_app_install">
+          <input checked="checked" id="sms_app_install" name="sms_app_install" value="1" type="checkbox">
+          Text me a link to download the Airbnb mobile app
+        </label>
+      </div>
+
+  </div>
+  <div class="panel-footer"><span style="display:">Please make sure you verify your BULK/SPAM folder in your e-mail account as well, to find the invoice and payment instructions. </span>
+    <button class="btn btn-primary" type="submit">
+      Continue
+    </button>
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+</div>
