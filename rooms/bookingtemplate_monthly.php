@@ -146,29 +146,29 @@ $bookcode = strtoupper($bookcode);
 <html xmlns:fb="http://ogp.me/ns/fb" lang="en">
 <head>
     <meta charset="utf-8">
-    <link href="//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/common_o2.2.css" media="all" rel="stylesheet" type="text/css">
-    <link href="//rawgit.com/serge72mt/rooms/master/airbnb/static/payments.css" media="screen" rel="stylesheet" type="text/css">
-	<link href="//rawgit.com/serge72mt/rooms/master/airbnb/static/p4/p4_with_v2_phone_verification_widget.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="<?= $rawgit_cdn; ?>airbnb/static/packages/common_o2.2.css" media="all" rel="stylesheet" type="text/css">
+    <link href="<?= $rawgit_cdn; ?>airbnb/static/payments.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="<?= $rawgit_cdn; ?>airbnb/static/p4/p4_with_v2_phone_verification_widget.css" media="screen" rel="stylesheet" type="text/css">
 	<script>var sherlock_firstbyte = Number(new Date());</script>
 
     <title>Book <?php echo $roomname; ?></title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:image" content="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/belo-400x400.png">
+    <meta property="og:image" content="<?= $rawgit_cdn; ?>airbnb/static/icons/belo-400x400.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="image_src" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/logos/belo-200x200.png">
+    <link rel="image_src" href="<?= $rawgit_cdn; ?>airbnb/static/logos/belo-200x200.png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#f5f5f5">
 
-    <link rel="apple-touch-icon" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="120x120" href=".//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/apple-touch-icon-180x180.png">
-	<link rel="icon" sizes="192x192" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/android-icon-192x192.png">
-	<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="//rawgit.com/serge72mt/rooms/master/airbnb/static/icons/logotype_favicon.ico">
-	<script charset="utf-8" class="lazyload" src="//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/react.js"></script>
-	<script charset="utf-8" class="lazyload" src="//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/field_guide.bundle.js"></script>
+    <link rel="apple-touch-icon" href="<?= $rawgit_cdn; ?>airbnb/static/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?= $rawgit_cdn; ?>airbnb/static/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href=".<?= $rawgit_cdn; ?>airbnb/static/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?= $rawgit_cdn; ?>airbnb/static/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?= $rawgit_cdn; ?>airbnb/static/icons/apple-touch-icon-180x180.png">
+	<link rel="icon" sizes="192x192" href="<?= $rawgit_cdn; ?>airbnb/static/icons/android-icon-192x192.png">
+	<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="<?= $rawgit_cdn; ?>airbnb/static/icons/logotype_favicon.ico">
+	<script charset="utf-8" class="lazyload" src="<?= $rawgit_cdn; ?>airbnb/static/packages/react.js"></script>
+	<script charset="utf-8" class="lazyload" src="<?= $rawgit_cdn; ?>airbnb/static/packages/field_guide.bundle.js"></script>
 	<script charset="utf-8" class="lazyload" src="//cdn.siftscience.com/s.js"></script>
   </head>
   <body class="with-new-header">
@@ -250,7 +250,7 @@ $bookcode = strtoupper($bookcode);
 </div>
 </div>
 </div>
-<script src="//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/header_cookie.bundle2.js" type="text/javascript"></script>
+<script src="<?= $rawgit_cdn; ?>airbnb/static/packages/header_cookie.bundle2.js" type="text/javascript"></script>
  <main id="site-content" role="main">
 <?php if(isset($_POST['bookform'])) { ?>
 <div id="main-view" class="main-view page-container-responsive row-space-top-6 row-space-6 <?php if($valid) { echo "hide"; }?>">
@@ -668,10 +668,10 @@ $(document).ready(function() {
 </script>
 
 
-<meta content="{&quot;account_activation/welcome.jpg&quot;:&quot;//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/welcome-aa503648ad6513fc0cb1284728e70d35.jpg&quot;,&quot;account_activation/success.jpg&quot;:&quot;../rooms/airbnb/static/packages/success-15a147d04b3a4af77d3ac5bd6f03d95d.jpg&quot;,&quot;user_pic-225x225.png?v=2&quot;:&quot;../rooms/airbnb/static/packages/user_pic-225x225.png?v=2&quot;}" id="_bootstrap-image_paths">
+<meta content="{&quot;account_activation/welcome.jpg&quot;:&quot;<?= $rawgit_cdn; ?>airbnb/static/packages/welcome-aa503648ad6513fc0cb1284728e70d35.jpg&quot;,&quot;account_activation/success.jpg&quot;:&quot;../rooms/airbnb/static/packages/success-15a147d04b3a4af77d3ac5bd6f03d95d.jpg&quot;,&quot;user_pic-225x225.png?v=2&quot;:&quot;../rooms/airbnb/static/packages/user_pic-225x225.png?v=2&quot;}" id="_bootstrap-image_paths">
 
-<script src="//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/libs_jquery_2x.js" type="text/javascript"></script>
-<script src="//rawgit.com/serge72mt/rooms/master/airbnb/static/packages/core.bundle.js" type="text/javascript"></script>
+<script src="<?= $rawgit_cdn; ?>airbnb/static/packages/libs_jquery_2x.js" type="text/javascript"></script>
+<script src="<?= $rawgit_cdn; ?>airbnb/static/packages/core.bundle.js" type="text/javascript"></script>
 <div id="google_translate_element"></div>
 <script type="text/javascript">
 function googleTranslateElementInit() {
