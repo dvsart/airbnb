@@ -556,7 +556,7 @@ function coChange() {
 </div>
 <?php } ?>
 <?php if($valid) {
-		$stpl = file_get_contents('https://raw.githubusercontent.com/serge72mt/rooms/master/successtemplate_monthly.html');
+		$stpl = file_get_contents($github .'successtemplate_monthly.html');
 		echo eval("?> ".$stpl." <?php ");
 } ?>
 </main>
@@ -637,7 +637,7 @@ $(document).ready(function() {
             $('#validate').attr({'disabled': 'true','value': 'Validating Email..'});
 						var data = { action: "validate", email: eemail }
 						$.ajax({
-						   type: 'POST',
+						   type: 'POST', 
 						   url: apihost,
 						   data: data,
 						   success: function(status) {
