@@ -1213,7 +1213,7 @@ $period = 3;
   <div class="text-center text-wrap"
     id="verified-id-icon">
 
-      <img alt="Verified!" height="50" src="https://raw.githubusercontent.com/serge72mt/rooms/master/images/verified_id_50_ffvber.png" width="62" />
+      <img alt="Verified!" height="50" src="<?= $rawgit_cdn; ?>images/verified_id_50_ffvber.png" width="62" />
     <div class="row-space-top-1">Verified ID</div>
   </div>
 </a>
